@@ -28,6 +28,7 @@ Manages client data of various types (Salaried, Business, House).
 - `GET /clients` - List all clients
 - `PUT /clients/{id}` - Update client
 - `DELETE /clients/{id}` - Delete client
+<img width="1536" alt="image" src="https://github.com/user-attachments/assets/c9c83b05-f77a-4731-bc66-973c834f2590" />
 
 ---
 
@@ -39,6 +40,7 @@ Handles tax filing and management for salaried clients.
 
 - `POST /salaried/tax-file` - File salaried tax (parameters: clientId, salary, taxSubType)
 - `GET /salaried/tax-total` - Get total tax paid by salaried client
+<img width="1100" alt="image" src="https://github.com/user-attachments/assets/d30d93d0-5b09-4372-8afb-5a1866742edc" />
 
 Uses the Taxation Service for tax filing.
 
@@ -52,6 +54,7 @@ Handles tax filing for business clients (e.g., GST, corporate tax).
 
 - `POST /business/tax-file` - File business tax (parameters: clientId, revenue, taxSubType)
 - `GET /business/tax-total` - Get total tax paid by business client
+<img width="1136" alt="image" src="https://github.com/user-attachments/assets/3eb15b55-d0ce-43ca-baa6-fcd0906e90e1" />
 
 Uses the Taxation Service for tax filing.
 
@@ -65,6 +68,7 @@ Manages taxation related to houses (property tax, etc.)
 
 - `POST /house/tax-file` - File house tax (parameters: clientId, propertyValue, taxSubType)
 - `GET /house/tax-total` - Get total tax paid related to the house
+<img width="1098" alt="image" src="https://github.com/user-attachments/assets/7d5bb6fa-47f8-4dde-84a9-84c48dd6b48b" />
 
 Uses the Taxation Service for tax filing.
 
@@ -80,6 +84,7 @@ Central service for managing tax records and calculations.
 - `GET /taxations/{id}` - Get tax record by ID
 - `GET /taxations/client/{clientId}` - List tax records by client
 - `GET /taxations/total/{clientId}` - Get total tax paid by client
+<img width="1124" alt="image" src="https://github.com/user-attachments/assets/65e78943-2f8e-40b8-b52a-08e2a74588a1" />
 
 ---
 
@@ -102,7 +107,6 @@ can be used for further common configurations.
 
 ## Running the Project
 
-- Configure each service’s `application.properties` with distinct ports.
 - Start services in any order (they are loosely coupled).
 - Use Swagger or API clients (Postman, curl) to interact.
 
